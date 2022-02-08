@@ -89,7 +89,6 @@ namespace LibreriaColores.Migrations
                     IdCliente = table.Column<int>(nullable: false),
                     NombreCliente = table.Column<string>(nullable: false),
                     DNICliente = table.Column<int>(nullable: false),
-                    TipoDocumento = table.Column<string>(nullable: true),
                     MontoPago = table.Column<decimal>(nullable: false),
                     MontoCambio = table.Column<decimal>(nullable: false),
                     MontoTotal = table.Column<decimal>(nullable: false),

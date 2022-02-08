@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibreriaColores.Migrations
 {
     [DbContext(typeof(Libreria))]
-    [Migration("20220125142458_inicio")]
-    partial class inicio
+    [Migration("20220208212944_inicioCorregido")]
+    partial class inicioCorregido
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -178,9 +178,6 @@ namespace LibreriaColores.Migrations
 
                     b.Property<string>("NombreCliente")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TipoDocumento")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
